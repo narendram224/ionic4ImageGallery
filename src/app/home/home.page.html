@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+ <ion-slides pager="true" [options]="sliderOpts">
+   <ion-slide *ngFor="let img of [1,2, 3,4,5]">
+     <img src = "assets/images/{{img}}.jpg"  tappable (click)="onClick(img)">
+   </ion-slide>
+ </ion-slides>
+</ion-content>
